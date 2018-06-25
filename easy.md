@@ -26,7 +26,7 @@ console.log(arrNew);
     C: [2,2,3,1,[1,2]]
     D: [2,1,2,1,[1,2]]
 
-#### 3. 以下javascript代码，输出结果为：
+#### 3. 以下javascript代码，输出结果为：(A)
 
 ```js
 var person = {
@@ -436,3 +436,267 @@ console.log(typeof arr);
     B: history
     C: self
     D: message
+
+#### 46. 以下 javascript 代码，在浏览器中运行的结果是（）
+
+```js
+var a = 4399 < 0 || typeof(4399 + ' ');
+
+console.log(a);
+```
+
+    A: true
+    B: string
+    C: undefined
+    D: false
+    E: number
+
+#### 47. 关于下列CSS选择器：ID选择器、类选择器、伪类选择器、标签名称选择器，排序正确的是：（D）
+
+    A: ID选择器>Class选择器>伪类=标签名称选择器
+    B: ID选择器>伪类>Class选择器>标签名称选择器
+    C: ID选择器>Class选择器>伪类>标签名称选择器
+    D: ID选择器>Class选择器=伪类>标签名称选择器
+
+#### 48. 在 javascript 中，用于阻止默认事件的默认操作的方法是 (E)
+
+    A: stopDeafault()
+    B: stopPropagation()
+    C: preventPropagation()
+    D: preventDefaultEven()
+    E: preventDefault()
+
+#### 49. 下列哪些是块级元素（B、C、D、E、F）
+
+    A: input
+    B: ul
+    C: hr
+    D: li
+    E: div
+    F: form
+
+#### 50. 下面哪种方式不能改变作用域链？(B)
+
+    A: with
+    B: while
+    C: try catch
+    D: eval
+
+#### 51. 上面代码执行后， arr 的值是：(B)
+
+```js
+var arr=[{a:1},{}];
+
+arr.forEach(function(item,idx){
+    item.b=idx;
+});
+```
+
+    A:  [{a:1},{}]
+    B:  [{a:1,b:0},{b:1}]
+    C:  [{a:1,b:1},{b:1}]
+    D:  [{a:!,b:0},{b:0}]
+
+#### 52. 请问a.length的值是多少（D）
+
+```js
+var a =[];
+
+a[0]=1, a[1]=2, a[2]=3, a[5]=4;
+```
+
+    A: 报错
+    B: 3
+    C: 4
+    D: 6
+
+#### 53. 下面有关 javascript 常见事件的触发情况，描述错误的是？（C）
+
+    A:  onmousedown：某个鼠标按键被按下
+    B:  onkeypress：某个键盘的键被按下或按住
+    C:  onblur：元素获得焦点
+    D:  onchange：用户改变域的内容
+
+#### 54. 请问 a 的结果是什么？(C)
+
+```js
+if(!"a" in window){
+    var a = 1;
+}
+
+alert(a);
+```
+
+    A: null
+    B: 1
+    C: undefined
+    D: 以上都不正确
+
+#### 55. 以下代码输出结果为：(B)
+
+```js
+var a = "undefined";
+var b = "false";
+var c = "";
+
+function assert(aVar){
+    if(aVar)     
+        alert(true);
+    else  
+        alert(false);
+}
+
+assert(a);
+assert(b);
+assert(c);
+```
+
+    A:  true，true，true
+    B:  true，true，false
+    C:  false，false，true
+    D:  false，false，false
+
+#### 56. 根据以下代码，下面选项描述正确的是哪个？(C)
+
+```js
+function * gen() {
+    yield 1;
+    yield 2;
+    yield 3;
+}
+```
+
+    A:  gen()执行后返回2
+    B:  gen()执行后返回undefined
+    C:  gen()执行后返回一个Generator对象
+    D:  gen()执行后返回1
+
+#### 57. 根据以下代码， x的值是 ()
+
+```js
+function A() {
+
+    this.do = function() {return ‘foo’;};
+
+}
+
+A.prototype = function() {
+    this.do = function() {return ‘bar’};
+};
+
+var x = new A().do();
+```
+
+    A: bar
+    B: 报错
+    C: foo
+    D: undefined
+
+#### 58. 关于以下这段代码正确的结论是 (A)
+
+```js
+var F = function(){};
+
+Object.prototype.a = function(){};
+Function.prototype.b = function(){};
+
+var f = new F();
+```
+
+    A:  f能取到a，但取不到b
+    B:  f能取到a,b
+    C:  F能取到b，不能取到a
+    D:  F能取到a，不能取到b
+
+#### 59. 假设有如下代码，那么a(10)的返回结果是？（A）
+
+```js
+function a(a) {
+  a^=(1<<4)-1;
+
+   return a;
+}
+```
+
+    A: 5
+    B: 10
+    C: 15
+    D: 16
+
+#### 60. 以下代码输出结果为？ (A)
+
+    A:  window
+    B: console
+    C: obj
+    D: undefined
+
+#### 61. 假设 output 是一个函数，输出一行文本。下面的语句输出结果是什么？(E)
+
+```js
+output(typeof (function() {output(“Hello World!”)})());
+```
+
+    A:  undefined Hello World!
+    B: object
+    C: string
+    D: function
+    E:  Hello World! undefined
+
+#### 62. 下面代码的运行结果为？(A)
+
+```js
+var a,b;
+(function(){
+    alert(a);
+    alert(b);
+
+    var a = b = 3;
+
+    alert(a);
+    alert(b);
+})();
+
+alert(a);
+alert(b);
+```
+
+    A:  undefined，undefined，3,3，undefined，3
+    B:  undefined，undefined，3,3，undefined，undefined
+    C:  0，0，3,3，undefined，undefined
+    D:  undefined，undefined，3,3，0，0
+
+#### 63. 以下代码输出结果为：(B)
+
+```js
+(function() {
+
+var x = foo();
+
+var foo = function foo() {
+    return “foobar”
+};
+
+return x;
+})();
+
+```
+
+    A:  foo()
+    B:  类型错误
+    C:  undefined
+    D:  foobar
+
+#### 64. 页面有一个按钮button id为 button1，通过原生的js如何禁用？(IE 考虑IE 8.0以上版本) (C、D)
+
+    A:  document.getElementById("button1").readolny= true;
+    B:  document.getElementById("button1").setAttribute(“readolny”,”true”);
+    C:  document.getElementById("button1").disabled = true;
+    D:  document.getElementById("button1").setAttribute(“disabled”,”true”);
+
+#### 65. 下面哪一种不属于 js 的六种基本数据类型？（D）
+
+    A: undefined
+    B: string
+    C: null
+    D: Object
+
