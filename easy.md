@@ -273,4 +273,166 @@ var a = [1,4,5,2,9];
     C: 语义化是HTML5带来的新概念，此前版本的HTML无法做到语义化
     D: header、article、address都属于语义化明确的标签
 
-#### 27. 
+#### 27. 下面关于线程和进程说法错误的有? (D)
+
+    A: 一个进程可创建一个或多个线程
+    B: 一个线程可创建一个或多个线程
+    C: 进程有独立的地址空间，线程没有
+    D: 线程与线程通信不可使用共享内存
+
+#### 28. html5的跨文档消息传输说法错误的是：(B)
+
+    A: 可以实现同域内的 web 页面之间可以互相通信
+    B: 缺点是不能实现跨域通信
+    C: 可以相互传递字符串和对象
+    D: 使用这个功能，需要获取到网页所在窗口对象的实例
+
+#### 29. 关于JSONP使用的说法错误的是：(D)
+
+    A: 可以实现跨域通信
+    B: 基于 json 格式数据，兼容性好，简单易用
+    C: 只支持跨域HTTP请求这种情况，不能解决不同域的两个页面之间进行JavaScript调用的问题
+    D: 可以完美支持POST请求
+
+#### 30. jQuery 如何选择到包含指定字符串的所有元素：(D)
+
+    A: 使用 :text
+    B: 使用 :input
+    C: 使用 :attr(name)
+    D: 使用 :contains(text)
+
+#### 31. 如何选择页面中的所有动画元素：(B)
+
+    A: $(":flash")
+    B: $(":animated")
+    C: $(":video")
+    D: $(":swf")
+
+#### 32. 如果想要让一个P 标签，在1s内缓慢的以滑动方式隐藏，要怎么实现：(A)
+
+    A: $("p").slideUp(1000);
+    B: $("p").slideDown(1000);
+    C: $("p").mergeUp(1000);
+    D: $("p").mergeDown(1000);
+
+#### 33. css中position 属性指定了元素的定位类型,下列关于position的四个属性值的描述中那个是错误的：(A)
+
+    A: static 元素出现在正常的流中，top:10px,即距离顶部10px
+    B: fixed 元素的位置相对于浏览器窗口是固定位置，即使窗口是滚动的它也不会移动
+    C: relative 相对定位元素的定位是相对其正常位置。
+    D: absolute 绝对定位的元素的位置相对于最近的已定位父元素，如果元素没有已定位的父元素，那么它的位置相对于&lt;html&gt;:&lt;/html&gt;
+
+#### 34. 这个正则表达式的意义是 “/^1(3|4|5|7|8)\d{9}$/” (A)
+
+    A: 匹配手机号码规则
+    B: 匹配身份证号规则
+    C: 匹配邮箱地址规则
+    D: 匹配固定电话规则
+
+#### 35. 执行以上的语句，将依次弹出那些信息：(D)
+
+```js
+var x = 10;
+var y = "10";
+
+alert(x + y);
+alert(x = y);
+alert(x == y);
+alert(x === y);
+```
+
+    A: 1010,10,true,false
+    B: 20,10,true,true
+    C: 20,10,true,false
+    D: 1010,10,true,true
+
+#### 36. 关于 javascript 中break 和 continue 语句说法错误的是：(D)
+
+    A: break 语句用于跳出循环
+    B: continue 用于跳过循环中的一个迭代,会继续执行该循环之后的代码（如果有的话）
+    C: continue 语句（带有或不带标签引用）只能用在循环中
+    D: break 语句（带有或不带标签引用）只能用在循环中
+
+#### 37. 在JavaScript中下面选项，关于this描述正确的是: (A)
+
+    A: 在使用new实例化对象时, this指向这个实例对象
+    B: 当对象调用函数或者方法时,this指向这个对象。
+    C: 在函数定义时,this指向全局变量
+    D: 在浏览器下的全局范围内，this指向全局对象
+
+#### 38. 以下代码的执行结果是什么？(A)
+
+```js
+var string = 'string';
+var number = 0;
+var bool = true;
+
+console.log(number || string);
+console.log(number && string);
+console.log(bool || number);
+console.log(bool && number);
+```
+
+    A: 'string', 0, true, 0
+    B: 'string', 'string', true, 0
+    C: 'string', true, 0, 0
+    D: 'string', 0, true, true
+
+#### 39. 以下代码的执行结果是什么？(B)
+
+    A: 1, 2, 3
+    B: 3, 2, 1
+    C: 2, 1, 3
+    D: 2, 3, 1
+
+#### 40. HTML5中关于 section元素使用正确的是 (D)
+
+    A: 通常将section元素用做设置样式的页面容器
+    B: 推荐使用section元素代替 article元素、aside元素、或 nav元素
+    C: 在没有标题的内容区块应该使用section元素
+    D: 如果你想把一块内容分成几块时，应该使用section元素
+
+#### 41. 下列哪些不属于HTML input元素种类：(D)
+
+    A: search
+    B: datetime
+    C: range
+    D: bool
+
+#### 42. 可以匹配下面代码的正则表达式是？(D)
+
+```html
+<img src="http://image.163.com"></img>
+```
+
+    A: <img src="[."]*></img>
+    B: <img src="[."]*"></img>
+    C: <img src="[^"]*></img>
+    D: <img src="[^"]*"></img>
+
+#### 43. 以下代码的运行结果是：(B)
+
+```js
+var arr = [];
+
+console.log(typeof arr);
+```
+
+    A: array
+    B: object
+    C: function
+    D: undefined
+
+#### 44. 下列哪些不是伪元素选择器：(D)
+
+    A: first-line
+    B: first-letter
+    C: before
+    D: behind
+
+#### 45. JavaScript中 window 对象的子对象不包含以下那个对象：(D)
+
+    A: document
+    B: history
+    C: self
+    D: message
